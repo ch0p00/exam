@@ -29,6 +29,7 @@
     "require": {
         "composer/installers": "^1.9",
         "drupal/admin_toolbar": "^3.4",
+        "drupal/algolia_places": "^2.0",
         "drupal/bootstrap": "^3.28",
         "drupal/cheeseburger_menu": "^5.0@RC",
         "drupal/color_field": "^3.0",
