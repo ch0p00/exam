@@ -1,0 +1,28 @@
+@import "variables";
+@import "mixins";
+
+body, html{
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+body{
+  width: 100%;
+  overflow-y: scroll;
+}
+img{
+  max-width: 100% !important;
+  height: auto;
+}
+*{
+  box-sizing: border-box;
+}
+h1, h2, h3, h4, h5, h6, ul, ol{
+  margin: 0;
+}
+section, div, img, p, nav {
+  border: none;
+}
+a:focus {
+  outline: none;
+}

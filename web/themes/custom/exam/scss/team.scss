@@ -1,0 +1,234 @@
+@import "variables";
+@import "mixins";
+
+.node--our-team- {
+  &-teaser {
+    text-align: center;
+
+    .layout__region--content * {
+      width: fit-content;
+      text-transform: uppercase;
+    }
+
+    .layout--onecol {
+      .layout__region--content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .block-field-blocknodeour-team-field-image-hover {
+          position: absolute;
+          z-index: -1;
+        }
+
+        .block-field-blocknodeour-team-field-image {
+
+          min-width: 290px;
+          min-height: 290px;
+
+        }
+
+        .block-field-blocknodeour-team-field-image:hover {
+          opacity: 0;
+        }
+
+        .block-field-blocknodeour-team-title {
+          margin-top: 33px;
+
+          a {
+            font-size: 25px;
+            color: black;
+          }
+        }
+
+        .block-field-blocknodeour-team-field-job-title {
+          margin-top: -7px;
+
+          a {
+            font-size: 12px;
+            color: $gray;
+          }
+        }
+
+        .block-field-blocknodeour-team-field-read-more {
+          margin-top: 23px;
+
+          a {
+            padding: 8px;
+            color: white;
+            background-color: $darkBlue;
+          }
+        }
+      }
+    }
+
+    .layout--twocol-section {
+      margin-top: 25px;
+      flex-wrap: nowrap;
+
+      nav {
+        .menu--social-media-menu {
+          display: flex;
+          justify-content: flex-end;
+
+          li {
+            margin-right: -5px;
+
+            a {
+              font-size: 0;
+
+              &:hover {
+                background-color: transparent;
+              }
+            }
+          }
+        }
+      }
+
+      .block-extra-field-blocknodeour-team-likeit {
+        .likeit__wrapper {
+          justify-content: center;
+          max-width: 260px;
+
+          .likeit__count {
+            display: none;
+          }
+
+          .like {
+            height: 14px;
+            a{
+              svg{
+                path{
+                  stroke: $gray;
+                }
+              }
+              &.liked{
+                svg{
+                  path{
+                    stroke: $red;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &-full {
+    .node__content {
+      padding: 3% 15%;
+
+      .layout--twocol-section {
+        .layout__region--first {
+          .block-field-blocknodeour-team-title {
+            font-size: 42px;
+          }
+
+          .block-field-blocknodeour-team-field-job-title {
+            a {
+              color: $gray;
+            }
+          }
+
+          .block-field-blocknodeour-team-field-take-part-in {
+            margin-top: 20px;
+
+            .field--name-field-take-part-in {
+              .field--label {
+                text-transform: uppercase;
+                font-weight: 400;
+                text-align: left;
+                width: 100%;
+                font-size: 20px;
+              }
+
+
+              .field--items {
+                .field--item {
+                  margin-left: 8px;
+
+                  a {
+                    color: $darkBlue;
+                    margin-left: 24px;
+                    font-size: 18px;
+
+                    &:before {
+                      content: '';
+                      display: block;
+                      background-color: $darkBlue;
+                      height: 3px;
+                      width: 3px;
+                      border-radius: 50%;
+                      margin-left: -10px;
+                      margin-bottom: -13px;
+                    }
+                  }
+                }
+              }
+            }
+
+          }
+
+          nav {
+            margin-top: 30px;
+
+            .menu--social-media-menu {
+              display: flex;
+
+              li {
+                a {
+                  font-size: 0;
+                }
+
+                &:hover {
+                  a {
+                    background-color: white;
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        .layout__region--second {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+
+          .block-extra-field-blocknodeour-team-likeit {
+            margin-top: 10px;
+
+            .likeit__wrapper {
+              .likeit__count {
+                display: none;
+              }
+              .like{
+                a{
+                  svg{
+                    path{
+                      stroke: $gray;
+                    }
+                  }
+                  &.liked{
+                      svg{
+                        path{
+                          stroke: $red;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .layout--onecol {
+        font-size: 30px;
+      }
+    }
+  }
+

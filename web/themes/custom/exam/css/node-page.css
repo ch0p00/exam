@@ -1,0 +1,35 @@
+.views-element-container .view .view-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.views-element-container .view .view-content .views-row {
+  flex: 0 1 20%;
+}
+.views-element-container .view.view-block-news .view-content .views-row {
+  flex: 0 1 37%;
+}
+.views-element-container .view.view-clients .view-content .views-row {
+  flex: 0 1 33%;
+}
+
+.pager-nav {
+  margin-top: 50px;
+}
+
+@media (max-width: 900px) {
+  .views-element-container .view .view-content .views-row {
+    flex: 0 1 40%;
+  }
+  .views-element-container .view.view-clients .view-content .views-row {
+    flex: 0 1 80%;
+  }
+}
+@media (max-width: 500px) {
+  .views-element-container .view .view-content .views-row {
+    flex: 0 1 80%;
+  }
+}
+/*# sourceMappingURL=node-page.css.map */

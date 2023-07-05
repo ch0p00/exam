@@ -1,0 +1,50 @@
+#block-bannerhome .block-field-blockblock-contentbannerfield-image {
+  position: relative;
+  margin-top: -445px;
+  z-index: -1;
+}
+#block-bannerhome .block-field-blockblock-contentbannerfield-image .field--name-field-image img {
+  min-height: 550px;
+  object-fit: cover;
+}
+#block-bannerhome .block-field-blockblock-contentbannerfield-text {
+  font-family: "Open Sans", sans-serif;
+  text-transform: uppercase;
+  margin-top: 6.5%;
+  margin-left: 23.7%;
+}
+#block-bannerhome .block-field-blockblock-contentbannerfield-text h2 {
+  font-size: 70px;
+  letter-spacing: -1.6px;
+  color: white;
+}
+#block-bannerhome .block-field-blockblock-contentbannerfield-text h4 {
+  font-size: 45px;
+  letter-spacing: -2px;
+}
+#block-bannerhome .block-field-blockblock-contentbannerfield-text p {
+  color: #6e9bca;
+  width: 380px;
+}
+
+@media (max-width: 600px) {
+  #block-bannerhome .block-field-blockblock-contentbannerfield-text {
+    margin-left: 50px;
+    margin-top: 10px;
+  }
+  #block-bannerhome .block-field-blockblock-contentbannerfield-text h2 {
+    font-size: 45px;
+    letter-spacing: -1.6px;
+    color: white;
+  }
+  #block-bannerhome .block-field-blockblock-contentbannerfield-text h4 {
+    font-size: 30px;
+    letter-spacing: -2px;
+  }
+  #block-bannerhome .block-field-blockblock-contentbannerfield-text p {
+    font-size: 12px;
+    color: #6e9bca;
+    width: 250px;
+  }
+}
+/*# sourceMappingURL=banner.css.map */

@@ -1,0 +1,200 @@
+header {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  overflow: hidden;
+}
+header .region-header {
+  flex: 0 1 65%;
+  background-color: #373645;
+  height: 116px;
+  display: grid;
+}
+header .region-header .navbar-brand {
+  grid-area: 1/1/2/2;
+}
+header .region-header .navbar-text {
+  display: block;
+  grid-area: 2/1/3/2;
+  margin-top: -28px;
+}
+header .region-header #block-exam-main-menu {
+  grid-area: 1/2/3/3;
+  border: none;
+  background-color: white;
+  display: flex;
+  align-items: center;
+}
+header .region-header #block-exam-main-menu .navbar-nav {
+  display: flex;
+  gap: 26px;
+  height: 95%;
+}
+header .region-header #block-exam-main-menu .navbar-nav li {
+  text-transform: uppercase;
+  height: inherit;
+}
+header .region-header #block-exam-main-menu .navbar-nav li a {
+  padding: 48px 0;
+  height: inherit;
+  color: black;
+}
+header .region-header #block-exam-main-menu .navbar-nav li a.is-active, header .region-header #block-exam-main-menu .navbar-nav li a.active-trail {
+  border-bottom: 5px solid #6e9bca;
+}
+header .region-header #block-exam-main-menu .navbar-nav li a:hover {
+  background-color: white;
+  border-bottom: 5px solid #6e9bca;
+}
+header .region-header #block-exam-main-menu .navbar-nav li.first a {
+  font-size: 0;
+  padding: 48px 15px;
+}
+header .region-header #block-socialmediamenu-2 {
+  height: 126%;
+  background-color: white;
+}
+header .region-header #block-socialmediamenu-2 .menu--social-media-menu {
+  display: flex;
+  margin: 48px 0 0 19px;
+}
+header .region-header #block-socialmediamenu-2 .menu--social-media-menu li {
+  width: 36px;
+}
+header .region-header #block-socialmediamenu-2 .menu--social-media-menu li a {
+  font-size: 0;
+}
+header .region-header #block-socialmediamenu-2 .menu--social-media-menu li a:hover {
+  background-color: white;
+}
+header .region-header .block-cheeseburgermenu-container .cheeseburger-menu__main-navigation-area div[data-cheeseburger-id=menu-main] .cheeseburger-menu__title {
+  text-transform: uppercase;
+  text-align: center;
+  color: #6e9bca;
+  font-size: 22px;
+}
+header .region-header .block-cheeseburgermenu-container .cheeseburger-menu__main-navigation-area div[data-cheeseburger-id=menu-main] .cheeseburger-menu__mainmenu li:hover a {
+  text-decoration: none;
+}
+header .region-header .block-cheeseburgermenu-container .cheeseburger-menu__main-navigation-area div[data-cheeseburger-id=menu-main] .cheeseburger-menu__mainmenu li a {
+  text-transform: uppercase;
+}
+header .region-header .block-cheeseburgermenu-container .cheeseburger-menu__main-navigation-area div[data-cheeseburger-id=menu-main] .cheeseburger-menu__mainmenu li a span:hover {
+  border-bottom: 5px solid #6e9bca;
+}
+header .region-header .block-cheeseburgermenu-container .cheeseburger-menu__main-navigation-area div[data-cheeseburger-id=menu-social-media-menu] .cheeseburger-menu__mainmenu {
+  display: flex;
+}
+header .region-header .block-cheeseburgermenu-container .cheeseburger-menu__main-navigation-area div[data-cheeseburger-id=menu-social-media-menu] .cheeseburger-menu__mainmenu .social-media-menu__item a {
+  font-size: 0;
+  background-size: 20px 20px;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+header .region-header .block-cheeseburgermenu-container .cheeseburger-menu__main-navigation-area div[data-cheeseburger-id=menu-social-media-menu] .cheeseburger-menu__mainmenu .social-media-menu__item .facebook-link {
+  background-image: url("/sites/default/files/menu_icons/fb.png");
+}
+header .region-header .block-cheeseburgermenu-container .cheeseburger-menu__main-navigation-area div[data-cheeseburger-id=menu-social-media-menu] .cheeseburger-menu__mainmenu .social-media-menu__item .twitter-link {
+  background-image: url("/sites/default/files/menu_icons/twit.png");
+}
+header .region-header .block-cheeseburgermenu-container .cheeseburger-menu__main-navigation-area div[data-cheeseburger-id=menu-social-media-menu] .cheeseburger-menu__mainmenu .social-media-menu__item .linkedin-link {
+  background-image: url("/sites/default/files/menu_icons/in.png");
+}
+header .region-header .block-search-api-page-form-block {
+  grid-area: 1/4/3/5;
+  background-color: white;
+}
+header .region-header .block-search-api-page-form-block form {
+  display: flex;
+  margin-top: 40px;
+  padding-left: 10px;
+}
+header .region-header .block-search-api-page-form-block form div {
+  width: 170px;
+}
+header .region-header .block-search-api-page-form-block form div input {
+  border-radius: 0;
+}
+header .region-header .block-search-api-page-form-block form div input::placeholder {
+  color: transparent;
+}
+header .region-header .block-search-api-page-form-block form .form-actions {
+  margin-right: 38px;
+  width: 30px;
+}
+header .region-header .block-search-api-page-form-block form .form-actions button {
+  font-size: 0;
+  background-color: white;
+  border-color: #cccccc;
+  border-radius: 0;
+  height: 34px;
+}
+header .region-header .block-search-api-page-form-block form .form-actions button span {
+  font-size: 21px;
+  filter: invert(15%);
+  margin: 0;
+}
+
+@media (max-width: 1240px) {
+  header .region-header #block-exam-main-menu .navbar-nav {
+    gap: 20px;
+  }
+  header .region-header #block-socialmediamenu-2 .menu--social-media-menu {
+    display: flex;
+    margin: 48px 0 0 0;
+  }
+}
+@media (max-width: 1130px) {
+  header .region-header #block-exam-main-menu {
+    display: none;
+  }
+  header .region-header #block-socialmediamenu-2 {
+    display: none;
+  }
+  header .region-header .block-cheeseburger-menu-trigger {
+    height: 125%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  header .region-header .block-cheeseburger-menu-trigger .block-cheeseburgermenu__trigger-element {
+    margin: 5px;
+  }
+  header .region-header .block-search-api-page-form-block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  header .region-header .block-search-api-page-form-block form {
+    margin-top: 20px;
+  }
+}
+@media (max-width: 800px) {
+  header .region-header {
+    height: 190px;
+  }
+  header .region-header .navbar-text {
+    margin-top: -42px;
+  }
+  header .region-header #block-exam-main-menu {
+    display: none;
+  }
+  header .region-header #block-socialmediamenu-2 {
+    display: none;
+  }
+  header .region-header .block-cheeseburger-menu-trigger {
+    grid-area: 1/2/2/3;
+    height: 100%;
+  }
+  header .region-header .block-search-api-page-form-block {
+    grid-area: 2/1/3/3;
+  }
+  header .region-header .block-search-api-page-form-block form {
+    margin: 0;
+    padding: 0;
+  }
+  header .region-header .block-search-api-page-form-block form .form-group {
+    margin: 0;
+  }
+}
+/*# sourceMappingURL=header.css.map */

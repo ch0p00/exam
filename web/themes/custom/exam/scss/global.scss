@@ -1,0 +1,42 @@
+@import "variables";
+@import "mixins";
+
+.page{
+  font-family: 'Open Sans', sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.dialog-off-canvas-main-canvas{
+  min-height: 100%;
+}
+.main-content{
+  flex: 1;
+}
+footer{
+  flex-shrink: 0;
+}
+
+/* --- Search Page ---*/
+main{
+  .region-content{
+    #search-form{
+      display: none;
+    }
+  }
+  .region-content > h3, .region-content > h2, .region-content > p{
+    text-align: center;
+    padding: 40px 0;
+  }
+  .region-content > p{
+    padding: 0;
+  }
+}
+
+.node--view-mode-short{
+  margin: 0 15%;
+  margin-bottom: 20px;
+  .block-field-blocknodeservicestitle, .block-field-blocknodeprojectstitle, .block-field-blocknodenewstitle, .block-field-blocknodeclientstitle, .block-field-blocknodeour-team-title{
+    font-size: 20px;
+  }
+}

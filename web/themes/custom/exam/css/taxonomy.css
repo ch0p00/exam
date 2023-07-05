@@ -1,0 +1,22 @@
+.view-taxonomy-term {
+  margin-top: 30px;
+}
+.view-taxonomy-term .view-content {
+  display: flex;
+}
+.view-taxonomy-term .view-content .views-row {
+  flex: 0 1 40% !important;
+}
+
+@media (max-width: 900px) {
+  .view-taxonomy-term {
+    margin-top: 30px;
+  }
+  .view-taxonomy-term .view-content {
+    display: flex;
+  }
+  .view-taxonomy-term .view-content .views-row {
+    flex: 0 1 80% !important;
+  }
+}
+/*# sourceMappingURL=taxonomy.css.map */

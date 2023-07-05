@@ -1,0 +1,25 @@
+.pager-nav .pagination .page-item {
+  display: none;
+}
+.pager-nav .pagination .is-active a:before {
+  content: "";
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  background-color: #dddddd;
+  display: inline-block;
+  position: absolute;
+  z-index: -1;
+  left: 4px;
+}
+.pager-nav .pagination li a {
+  color: #646464;
+  font-size: 16px;
+  background-color: transparent;
+  border: none;
+}
+.pager-nav .pagination li a:hover {
+  background-color: transparent;
+  color: gray;
+}
+/*# sourceMappingURL=pager.css.map */

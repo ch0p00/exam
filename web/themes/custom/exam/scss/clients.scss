@@ -1,0 +1,33 @@
+@import "variables";
+@import "mixins";
+
+.node--clients {
+  &-teaser {
+    a {
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  &-full {
+    .node__content {
+      padding: 3% 17%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .field--name-field-title {
+        font-weight: 900;
+        font-size: 40px;
+      }
+
+      .field--name-field-slide-image {
+        margin: 15px 0;
+      }
+
+      .field--name-body {
+        font-size: 32px;
+      }
+    }
+  }
+}

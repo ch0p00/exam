@@ -1,0 +1,39 @@
+@import "variables";
+@import "mixins";
+
+.pager-nav {
+
+  .pagination {
+    .page-item {
+      display: none;
+    }
+
+    .is-active {
+      a:before {
+        content: "";
+        height: 25px;
+        width: 25px;
+        border-radius: 50%;
+        background-color: #dddddd;
+        display: inline-block;
+        position: absolute;
+        z-index: -1;
+        left: 4px;
+      }
+    }
+
+    li {
+      a {
+        color: #646464;
+        font-size: 16px;
+        background-color: transparent;
+        border: none;
+
+        &:hover {
+          background-color: transparent;
+          color: gray;
+        }
+      }
+    }
+  }
+}

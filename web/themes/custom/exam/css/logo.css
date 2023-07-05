@@ -1,0 +1,24 @@
+.navbar-brand {
+  font-family: "Roboto Slab", serif;
+  font-size: 34px;
+  text-align: center;
+  padding: 32px 0;
+}
+
+.navbar-text {
+  margin: 0;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+}
+
+.navbar-text, .navbar-brand {
+  width: 240px;
+}
+
+@media (max-width: 1240px) {
+  .navbar-text, .navbar-brand {
+    width: 200px;
+  }
+}
+/*# sourceMappingURL=logo.css.map */

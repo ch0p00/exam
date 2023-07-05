@@ -1,0 +1,282 @@
+@import "variables";
+@import "mixins";
+
+header {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  overflow: hidden;
+
+  .region-header {
+    flex: 0 1 65%;
+    background-color: $darkBlue;
+    height: 116px;
+    display: grid;
+
+    .navbar-brand {
+      grid-area: 1 / 1 / 2 / 2;
+    }
+
+    .navbar-text {
+      display: block;
+      grid-area: 2 / 1 / 3 / 2;
+      margin-top: -28px;
+    }
+
+    #block-exam-main-menu {
+      grid-area: 1 / 2 / 3 / 3;
+      border: none;
+      background-color: white;
+      display: flex;
+      align-items: center;
+
+      .navbar-nav {
+        display: flex;
+        gap: 26px;
+        height: 95%;
+
+        li {
+          text-transform: uppercase;
+          height: inherit;
+
+          a {
+            padding: 48px 0;
+            height: inherit;
+            color: black;
+
+            &.is-active, &.active-trail {
+              border-bottom: 5px solid $blue;
+            }
+
+            &:hover {
+              background-color: white;
+              border-bottom: 5px solid $blue;
+            }
+          }
+
+          &.first {
+            a {
+              font-size: 0;
+              padding: 48px 15px;
+            }
+          }
+        }
+      }
+    }
+
+    #block-socialmediamenu-2 {
+      height: 126%;
+      background-color: white;
+
+      .menu--social-media-menu {
+        display: flex;
+        margin: 48px 0 0 19px;
+
+        li {
+          width: 36px;
+
+          a {
+            font-size: 0;
+
+            &:hover {
+              background-color: white;
+            }
+          }
+        }
+      }
+    }
+
+    .block-cheeseburgermenu-container {
+      .cheeseburger-menu__main-navigation-area {
+        div[data-cheeseburger-id="menu-main"] {
+          .cheeseburger-menu__title {
+            text-transform: uppercase;
+            text-align: center;
+            color: $blue;
+            font-size: 22px;
+          }
+
+          .cheeseburger-menu__mainmenu {
+            li {
+              &:hover {
+                a {
+                  text-decoration: none;
+                }
+              }
+
+              a {
+                text-transform: uppercase;
+
+                span {
+                  &:hover {
+                    border-bottom: 5px solid $blue;
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        div[data-cheeseburger-id="menu-social-media-menu"] {
+          .cheeseburger-menu__mainmenu {
+            display: flex;
+            .social-media-menu__item {
+              a {
+                font-size: 0;
+                background-size: 20px 20px;
+                background-position: center center;
+                background-repeat: no-repeat;
+              }
+
+              .facebook-link {
+                background-image: url("/sites/default/files/menu_icons/fb.png");
+              }
+
+              .twitter-link {
+                background-image: url("/sites/default/files/menu_icons/twit.png");
+              }
+
+              .linkedin-link {
+                background-image: url("/sites/default/files/menu_icons/in.png");
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .block-search-api-page-form-block {
+      grid-area: 1 / 4 / 3 / 5;
+      background-color: white;
+
+      form {
+        display: flex;
+        margin-top: 40px;
+        padding-left: 10px;
+
+        div {
+          width: 170px;
+
+          input {
+            border-radius: 0;
+
+            &::placeholder {
+              color: transparent;
+            }
+          }
+        }
+
+        .form-actions {
+          margin-right: 38px;
+          width: 30px;
+
+          button {
+            font-size: 0;
+            background-color: white;
+            border-color: #cccccc;
+            border-radius: 0;
+            height: 34px;
+
+            span {
+              font-size: 21px;
+              filter: invert(15%);
+              margin: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1240px) {
+  header {
+    .region-header {
+      #block-exam-main-menu {
+        .navbar-nav {
+          gap: 20px;
+        }
+      }
+
+      #block-socialmediamenu-2 {
+        .menu--social-media-menu {
+          display: flex;
+          margin: 48px 0 0 0;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1130px) {
+  header {
+    .region-header {
+      #block-exam-main-menu {
+        display: none;
+      }
+
+      #block-socialmediamenu-2 {
+        display: none;
+      }
+
+      .block-cheeseburger-menu-trigger {
+        height: 125%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .block-cheeseburgermenu__trigger-element {
+          margin: 5px;
+        }
+      }
+
+      .block-search-api-page-form-block {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        form {
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  header {
+    .region-header {
+      height: 190px;
+
+      .navbar-text {
+        margin-top: -42px;
+      }
+
+      #block-exam-main-menu {
+        display: none;
+      }
+
+      #block-socialmediamenu-2 {
+        display: none;
+      }
+
+      .block-cheeseburger-menu-trigger {
+        grid-area: 1 / 2 / 2 / 3;
+        height: 100%;
+      }
+
+      .block-search-api-page-form-block {
+        grid-area: 2 / 1 / 3 / 3;
+
+        form {
+          margin: 0;
+          padding: 0;
+
+          .form-group {
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+}

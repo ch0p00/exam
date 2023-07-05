@@ -1,0 +1,27 @@
+.page-header {
+  margin-top: 30px;
+  border: none;
+}
+
+.node--page-full .field--type-string-long {
+  margin: 0 15%;
+}
+.node--page-full .field--type-string-long .field--item {
+  font-size: 20px;
+  font-weight: 900;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+@media (max-width: 700px) {
+  .node--page-full .field--type-string-long {
+    margin: 0 10%;
+  }
+  .node--page-full .field--type-string-long .field--item {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+  }
+}
+/*# sourceMappingURL=about.css.map */

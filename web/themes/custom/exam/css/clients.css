@@ -1,0 +1,21 @@
+.node--clients-teaser a {
+  display: flex;
+  justify-content: center;
+}
+.node--clients-full .node__content {
+  padding: 3% 17%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.node--clients-full .node__content .field--name-field-title {
+  font-weight: 900;
+  font-size: 40px;
+}
+.node--clients-full .node__content .field--name-field-slide-image {
+  margin: 15px 0;
+}
+.node--clients-full .node__content .field--name-body {
+  font-size: 32px;
+}
+/*# sourceMappingURL=clients.css.map */
