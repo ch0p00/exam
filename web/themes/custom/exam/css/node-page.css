@@ -26,6 +26,9 @@
   .views-element-container .view.view-clients .view-content .views-row {
     flex: 0 1 80%;
   }
+  .views-element-container .view.view-block-news .view-content .views-row {
+    flex: 0 1 80%;
+  }
 }
 @media (max-width: 500px) {
   .views-element-container .view .view-content .views-row {

@@ -51,6 +51,13 @@
           }
         }
       }
+      &.view-block-news{
+        .view-content{
+          .views-row{
+            flex: 0 1 80%;
+          }
+        }
+      }
     }
   }
 }

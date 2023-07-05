@@ -178,6 +178,10 @@ main .layout__region--content .block-views-blockclients-block-1 {
 main .layout__region--content .block-views-blockclients-block-1 .view-content {
   margin: 60px 15% 170px 15%;
 }
+main .layout__region--content .block-views-blockclients-block-1 .view-content .slick-slider .slick-track {
+  display: flex;
+  align-items: center;
+}
 
 @media (max-width: 1400px) {
   main .layout__region--content .block-views-blocksearch-news-block-1 .form-group .view-content {

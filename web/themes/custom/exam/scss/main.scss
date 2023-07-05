@@ -221,6 +221,12 @@ main {
 
       .view-content {
         margin: 60px 15% 170px 15%;
+        .slick-slider{
+          .slick-track{
+            display: flex;
+            align-items: center;
+          }
+        }
       }
     }
   }

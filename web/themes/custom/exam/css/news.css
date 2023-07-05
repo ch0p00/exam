@@ -131,8 +131,11 @@
 }
 
 @media (max-width: 700px) {
+  .node--news-teaser .layout--twocol-section .layout__region--first {
+    flex: 0 1 100%;
+  }
   .node--news-teaser .layout--twocol-section .layout__region--second {
-    flex: 0 1 78%;
+    flex: 0 1 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
