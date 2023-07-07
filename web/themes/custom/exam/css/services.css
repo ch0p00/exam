@@ -21,10 +21,10 @@
   color: #dadada;
   margin: 10px 0;
 }
-.node--services-teaser .layout__region--content .block-field-blocknodeservicesfield-read-more {
+.node--services-teaser .layout__region--content .block-field-blocknodeservicesfield-more {
   margin-top: 15px;
 }
-.node--services-teaser .layout__region--content .block-field-blocknodeservicesfield-read-more a {
+.node--services-teaser .layout__region--content .block-field-blocknodeservicesfield-more a {
   padding: 8px;
   color: white;
   background-color: #6e9bca;

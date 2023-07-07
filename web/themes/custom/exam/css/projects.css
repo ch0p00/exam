@@ -29,11 +29,11 @@
 .node--projects-teaser .layout__region--content .block-field-blocknodeprojectsfield-related-service a div {
   font-size: 16px;
 }
-.node--projects-teaser .layout__region--content .block-field-blocknodeprojectsfield-read-more {
+.node--projects-teaser .layout__region--content .block-field-blocknodeprojectsfield-more {
   margin: 23px 0 16px 0;
   z-index: 1;
 }
-.node--projects-teaser .layout__region--content .block-field-blocknodeprojectsfield-read-more a {
+.node--projects-teaser .layout__region--content .block-field-blocknodeprojectsfield-more a {
   padding: 5px;
   color: white;
   background-color: #373645;

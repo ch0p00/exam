@@ -51,6 +51,7 @@
         "drupal/simple_menu_icons": "^3.0",
         "drupal/slick": "^2.9",
         "drupal/slick_views": "^2.7",
+        "drupal/social_media_links": "^2.9",
         "drupal/telephone_validation": "^2.4",
         "drupal/views_aggregator": "^2.0",
         "drupal/views_slideshow": "^5.0",

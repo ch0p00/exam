@@ -92,7 +92,7 @@
             }
           }
 
-          .block-field-blocknodenewsfield-read-more {
+          .block-field-blocknodenewsfield-more {
             margin: 15px 20px 15px 0;
 
             a {
@@ -228,6 +228,24 @@
 
           .layout__region--second:before {
             display: none;
+          }
+        }
+      }
+    }
+    &-full {
+      .node__content {
+        padding: 2% 10%;
+        .block-field-blocknodenewsrevision-timestamp{
+          display: none;
+        }
+
+        .layout--onecol{
+          .block-field-blocknodenewstitle{
+            font-weight: 400;
+            font-size: 32px;
+          }
+          .block-field-blocknodenewsbody{
+            font-size: 18px;
           }
         }
       }

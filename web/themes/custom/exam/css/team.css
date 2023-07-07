@@ -35,10 +35,10 @@
   font-size: 12px;
   color: #dadada;
 }
-.node--our-team--teaser .layout--onecol .layout__region--content .block-field-blocknodeour-team-field-read-more {
+.node--our-team--teaser .layout--onecol .layout__region--content .block-field-blocknodeour-team-field-more {
   margin-top: 23px;
 }
-.node--our-team--teaser .layout--onecol .layout__region--content .block-field-blocknodeour-team-field-read-more a {
+.node--our-team--teaser .layout--onecol .layout__region--content .block-field-blocknodeour-team-field-more a {
   padding: 8px;
   color: white;
   background-color: #373645;
@@ -46,19 +46,6 @@
 .node--our-team--teaser .layout--twocol-section {
   margin-top: 25px;
   flex-wrap: nowrap;
-}
-.node--our-team--teaser .layout--twocol-section nav .menu--social-media-menu {
-  display: flex;
-  justify-content: flex-end;
-}
-.node--our-team--teaser .layout--twocol-section nav .menu--social-media-menu li {
-  margin-right: -5px;
-}
-.node--our-team--teaser .layout--twocol-section nav .menu--social-media-menu li a {
-  font-size: 0;
-}
-.node--our-team--teaser .layout--twocol-section nav .menu--social-media-menu li a:hover {
-  background-color: transparent;
 }
 .node--our-team--teaser .layout--twocol-section .block-extra-field-blocknodeour-team-likeit .likeit__wrapper {
   justify-content: center;
@@ -75,6 +62,12 @@
 }
 .node--our-team--teaser .layout--twocol-section .block-extra-field-blocknodeour-team-likeit .likeit__wrapper .like a.liked svg path {
   stroke: #e03114;
+}
+.node--our-team--teaser .layout--twocol-section .social-media-links--platforms {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 15%;
+  margin-top: -4px;
 }
 .node--our-team--full .node__content {
   padding: 3% 15%;
@@ -113,17 +106,14 @@
   margin-left: -10px;
   margin-bottom: -13px;
 }
-.node--our-team--full .node__content .layout--twocol-section .layout__region--first nav {
+.node--our-team--full .node__content .layout--twocol-section .layout__region--first .block-field-blocknodeour-team-field-social-media {
   margin-top: 30px;
 }
-.node--our-team--full .node__content .layout--twocol-section .layout__region--first nav .menu--social-media-menu {
+.node--our-team--full .node__content .layout--twocol-section .layout__region--first .block-field-blocknodeour-team-field-social-media .social-media-links--platforms {
   display: flex;
 }
-.node--our-team--full .node__content .layout--twocol-section .layout__region--first nav .menu--social-media-menu li a {
-  font-size: 0;
-}
-.node--our-team--full .node__content .layout--twocol-section .layout__region--first nav .menu--social-media-menu li:hover a {
-  background-color: white;
+.node--our-team--full .node__content .layout--twocol-section .layout__region--first .block-field-blocknodeour-team-field-social-media .social-media-links--platforms li {
+  margin-right: 10px;
 }
 .node--our-team--full .node__content .layout--twocol-section .layout__region--second {
   display: flex;
@@ -143,6 +133,7 @@
   stroke: #e03114;
 }
 .node--our-team--full .layout--onecol {
-  font-size: 30px;
+  margin-top: 40px;
+  font-size: 22px;
 }
 /*# sourceMappingURL=team.css.map */
