@@ -22,7 +22,8 @@ global:
       css/about.css: { }
       css/taxonomy.css: { }
       css/footer.css: { }
-
+  js:
+    utilities.js: {}
 
 # Uncomment for LESS source JavaScript files.
 #  js:
