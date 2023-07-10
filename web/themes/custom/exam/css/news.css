@@ -63,10 +63,14 @@
 }
 .node--news-teaser .layout--twocol-section:last-child .layout__region--second .block-field-blocknodenewstitle {
   margin-bottom: 5px;
+  text-align: left;
 }
 .node--news-teaser .layout--twocol-section:last-child .layout__region--second .block-field-blocknodenewstitle a {
   font-size: 23px;
   color: black;
+}
+.node--news-teaser .layout--twocol-section:last-child .layout__region--second .block-field-blocknodenewsbody {
+  text-align: left;
 }
 .node--news-teaser .layout--twocol-section:last-child .layout__region--second .block-field-blocknodenewsbody div {
   line-height: 1.3;
@@ -92,6 +96,7 @@
 }
 .node--news-full .node__content {
   padding: 3% 17%;
+  text-align: left;
 }
 .node--news-full .node__content .layout--twocol-section .layout__region--first {
   display: flex;
@@ -101,12 +106,14 @@
   display: flex;
   align-items: center;
   text-transform: uppercase;
+  font-size: 12px;
 }
 .node--news-full .node__content .layout--twocol-section .layout__region--first .block-field-blocknodenewsfield-text {
   margin-left: 10px;
   display: flex;
   align-items: center;
   text-transform: uppercase;
+  font-size: 12px;
 }
 .node--news-full .node__content .layout--twocol-section .layout__region--first .block-field-blocknodenewsfield-text .field--name-field-text .field--item {
   display: inline-block;
@@ -118,6 +125,7 @@
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  font-size: 14px;
 }
 .node--news-full .node__content .layout--onecol .block-field-blocknodenewstitle {
   text-align: center;

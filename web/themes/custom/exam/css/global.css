@@ -18,6 +18,11 @@ footer {
 }
 
 /* --- Search Page ---*/
+main .region-content {
+  text-align: center;
+  font-size: 28px;
+  padding-top: 10px;
+}
 main .region-content #search-form {
   display: none;
 }
@@ -27,6 +32,9 @@ main .region-content > h3, main .region-content > h2, main .region-content > p {
 }
 main .region-content > p {
   padding: 0;
+}
+main .region-content > ul {
+  display: none;
 }
 
 .node--view-mode-short {

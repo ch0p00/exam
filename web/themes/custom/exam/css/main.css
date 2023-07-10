@@ -14,26 +14,27 @@
   bottom: 50%;
   height: 1px;
   background-color: #dadada;
+  z-index: -1;
 }
 
 .block-title::before, .page-header::before {
   right: 15%;
-  width: 30%;
+  width: 26%;
 }
 
 .block-title::after, .page-header::after {
   left: 15%;
-  width: 30%;
+  width: 26%;
 }
 
 @media (max-width: 1440px) {
   .block-title::before, .page-header::before {
     right: 15%;
-    width: 25%;
+    width: 23%;
   }
   .block-title::after, .page-header::after {
     left: 15%;
-    width: 25%;
+    width: 23%;
   }
 }
 @media (max-width: 960px) {
@@ -83,6 +84,7 @@ main .layout__region--content .block-block-content .field--name-field-text a {
   color: white;
   background-color: #6e9bca;
   white-space: nowrap;
+  font-size: 16px;
 }
 main .layout__region--content .block-block-content .field--name-field-text:hover {
   text-decoration: none;
@@ -93,7 +95,7 @@ main .layout__region--content .block-views-blockblock-services-block-1 .view-con
   justify-content: center;
   gap: 55px;
   flex-wrap: wrap;
-  margin: 90px 0;
+  margin: 90px 8%;
 }
 main .layout__region--content .block-views-blockblock-projects-block-1 {
   margin-top: 25px;
@@ -109,7 +111,7 @@ main .layout__region--content .block-views-blockblock-projects-block-1 .view-blo
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  padding: 90px 0 45px 0;
+  padding: 90px 6% 45px 6%;
 }
 main .layout__region--content .block-views-blockblock-projects-block-1 .view-block-projects .view-content .views-row .layout__region--content {
   border-bottom: 1px solid #373645;
@@ -127,7 +129,7 @@ main .layout__region--content .block-views-blockblock-team-block-1 .view-content
   justify-content: center;
   gap: 30px;
   flex-wrap: wrap;
-  margin: 38px 0 184px 0;
+  margin: 38px 6% 184px 6%;
 }
 main .layout__region--content .block-views-blocksearch-news-block-1 .view-search-news {
   background-size: 11px 11px;
@@ -161,9 +163,9 @@ main .layout__region--content .block-views-blocksearch-news-block-1 .view-search
 main .layout__region--content .block-views-blocksearch-news-block-1 .view-search-news .form-group {
   padding-bottom: 15px;
   margin: 0;
+  text-align: left;
 }
 main .layout__region--content .block-views-blocksearch-news-block-1 .view-search-news .form-group .form-item {
-  margin-left: 15%;
   margin-top: 40px;
 }
 main .layout__region--content .block-views-blocksearch-news-block-1 .view-search-news .form-group .form-actions {
@@ -183,6 +185,20 @@ main .layout__region--content .block-views-blockclients-block-1 .view-content .s
   align-items: center;
 }
 
+@media (max-width: 1460px) {
+  main .layout__region--content .block-views-blockblock-services-block-1 .view-content .views-row {
+    flex: 0 1 40%;
+  }
+  main .layout__region--content .block-views-blockblock-projects-block-1 .view-content .views-row {
+    flex: 0 1 40%;
+  }
+  main .layout__region--content .block-views-blockblock-team-block-1 .view-content .views-row {
+    flex: 0 1 40%;
+  }
+  main .layout__region--content .block-views-blockblock-team-block-1 .view-content .views-row .likeit__wrapper {
+    margin-right: 70px;
+  }
+}
 @media (max-width: 1400px) {
   main .layout__region--content .block-views-blocksearch-news-block-1 .form-group .view-content {
     flex-direction: column;
@@ -195,20 +211,6 @@ main .layout__region--content .block-views-blockclients-block-1 .view-content .s
   }
   main .layout__region--content .block-views-blocksearch-news-block-1 .form-group form .form--inline div:first-child {
     margin-left: 0;
-  }
-}
-@media (max-width: 1250px) {
-  main .layout__region--content .block-views-blockblock-services-block-1 .view-content .views-row {
-    flex: 0 1 40%;
-  }
-  main .layout__region--content .block-views-blockblock-projects-block-1 .view-content .views-row {
-    flex: 0 1 40%;
-  }
-  main .layout__region--content .block-views-blockblock-team-block-1 .view-content .views-row {
-    flex: 0 1 40%;
-  }
-  main .layout__region--content .block-views-blockblock-team-block-1 .view-content .views-row .likeit__wrapper {
-    margin-right: 70px;
   }
 }
 @media (max-width: 640px) {

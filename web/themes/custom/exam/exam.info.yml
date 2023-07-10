@@ -13,5 +13,3 @@ regions:
 libraries:
   - 'exam/global'
   - 'exam/exam'
-scripts:
-  - 'utilities'

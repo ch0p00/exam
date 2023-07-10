@@ -37,9 +37,11 @@
   padding: 5px;
   color: white;
   background-color: #373645;
+  font-size: 16px;
 }
 .node--projects-full .layout__region--content {
   padding: 5% 17%;
+  text-align: left;
 }
 .node--projects-full .layout__region--content .block-field-blocknodeprojectstitle {
   font-weight: 900;

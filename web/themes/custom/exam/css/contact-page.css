@@ -1,3 +1,6 @@
+.node--page-full {
+  margin: 10px 0;
+}
 .node--page-full .node__content .layout--onecol .block-inline-blockbasic {
   text-align: center;
 }
@@ -35,10 +38,14 @@
   padding: 12px 25px;
   border-radius: 5%;
   border: none;
+  float: left;
 }
 .node--page-full .node__content .layout--twocol-section .layout__region--first .block-webform form div textarea {
   height: 200px;
   resize: none;
+}
+.node--page-full .node__content .layout--twocol-section .layout__region--second .block-field-blocknodepagefield-body {
+  margin: 10px 0;
 }
 .node--page-full .node__content .layout--twocol-section .layout__region--second .block-field-blocknodepagefield-body .field--name-field-body {
   margin: 0 3%;
@@ -83,13 +90,19 @@
   .node--page-full .node__content .layout--twocol-section .layout__region--first .block-webform {
     margin: 0 3%;
   }
+  .node--page-full .node__content .layout--twocol-section .layout__region--first .block-webform form .webform-button--submit {
+    float: none;
+  }
   .node--page-full .node__content .layout--twocol-section .layout__region--second {
     flex: 0 1 95%;
-    text-align: center;
+    text-align: center !important;
   }
   .node--page-full .node__content .layout--twocol-section .layout__region--second .block-views-blockmap-block-1 .view-map .view-content {
     justify-content: center;
     margin: 0;
+  }
+  .node--page-full .node__content .layout--twocol-section .layout__region--second .block-field-blocknodepagefield-body .field--name-field-body .field--item {
+    text-align: center;
   }
 }
 @media (max-width: 440px) {

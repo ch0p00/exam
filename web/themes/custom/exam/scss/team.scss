@@ -42,7 +42,7 @@
         }
 
         .block-field-blocknodeour-team-field-job-title {
-          margin-top: -7px;
+          margin-top: -10px;
 
           a {
             font-size: 12px;
@@ -51,12 +51,12 @@
         }
 
         .block-field-blocknodeour-team-field-more {
-          margin-top: 23px;
 
           a {
             padding: 8px;
             color: white;
             background-color: $darkBlue;
+            font-size: 16px;
           }
         }
       }
@@ -66,39 +66,18 @@
       margin-top: 25px;
       flex-wrap: nowrap;
 
-      .block-extra-field-blocknodeour-team-likeit {
-        .likeit__wrapper {
-          justify-content: center;
-          max-width: 260px;
-
-          .likeit__count {
-            display: none;
-          }
-
-          .like {
-            height: 14px;
-            a{
-              svg{
-                path{
-                  stroke: $gray;
-                }
-              }
-              &.liked{
-                svg{
-                  path{
-                    stroke: $red;
-                  }
-                }
-              }
-            }
-          }
-        }
+      .block-extra-field-blocknodeour-team-flag-like {
+        font-size: 0;
+        margin-left: 75px;
+        margin-top: 3px;
       }
-      .social-media-links--platforms{
+
+      .social-media-links--platforms {
         display: flex;
         justify-content: flex-end;
         margin-right: 15%;
         margin-top: -4px;
+        font-size: 10px;
       }
     }
   }
@@ -106,6 +85,7 @@
   &-full {
     .node__content {
       padding: 3% 15%;
+      text-align: left;
 
       .layout--twocol-section {
         .layout__region--first {
@@ -149,7 +129,7 @@
                       width: 3px;
                       border-radius: 50%;
                       margin-left: -10px;
-                      margin-bottom: -13px;
+                      margin-bottom: -25px;
                     }
                   }
                 }
@@ -163,7 +143,9 @@
 
             .social-media-links--platforms {
               display: flex;
-              li{
+              font-size: 14px;
+
+              li {
                 margin-right: 10px;
               }
             }
@@ -175,39 +157,125 @@
           flex-direction: column;
           align-items: center;
 
-          .block-extra-field-blocknodeour-team-likeit {
+          .block-extra-field-blocknodeour-team-flag-like {
             margin-top: 10px;
-
-            .likeit__wrapper {
-              .likeit__count {
-                display: none;
-              }
-              .like{
-                a{
-                  svg{
-                    path{
-                      stroke: $gray;
-                    }
-                  }
-                  &.liked{
-                      svg{
-                        path{
-                          stroke: $red;
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            }
+            font-size: 0;
           }
         }
       }
+    }
 
-      .layout--onecol {
-        margin-top: 40px;
-        font-size: 22px;
-      }
+    .layout--onecol {
+      margin-top: 40px;
+      font-size: 22px;
     }
   }
+
+  /* Like button */
+  .action-flag {
+    a, a::after {
+      border: 2px solid $gray;
+      border-top-left-radius: 100px;
+      border-top-right-radius: 100px;
+      width: 10px;
+      height: 8px;
+      border-bottom: 0;
+    }
+
+  }
+
+
+  .action-flag a {
+    box-sizing: border-box;
+    position: relative;
+    transform: translate(
+        calc(-10px / 2 * var(--ggs, 1)),
+        calc(-6px / 2 * var(--ggs, 1))
+    ) rotate(-45deg) scale(var(--ggs, 1));
+    display: block
+  }
+
+  .action-flag a::after,
+  .action-flag a::before {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute
+  }
+
+  .action-flag {
+    a::after {
+      right: -9px;
+      transform: rotate(90deg);
+      top: 5px
+    }
+  }
+
+
+  .action-flag {
+    a::before {
+      width: 11px;
+      height: 11px;
+      border-left: 2px solid;
+      border-bottom: 2px solid;
+      left: -2px;
+      top: 3px;
+      color: $gray;
+    }
+  }
+
+  .action-unflag {
+    a, a::after {
+      border: 2px solid $red;
+      border-top-left-radius: 100px;
+      border-top-right-radius: 100px;
+      width: 10px;
+      height: 8px;
+      border-bottom: 0;
+      background-color: $red;
+    }
+
+  }
+
+
+  .action-unflag a {
+    box-sizing: border-box;
+    position: relative;
+    transform: translate(
+        calc(-10px / 2 * var(--ggs, 1)),
+        calc(-6px / 2 * var(--ggs, 1))
+    ) rotate(-45deg) scale(var(--ggs, 1));
+    display: block
+  }
+
+  .action-unflag a::after,
+  .action-unflag a::before {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute
+  }
+
+  .action-unflag {
+    a::after {
+      right: -9px;
+      transform: rotate(90deg);
+      top: 5px
+    }
+  }
+
+
+  .action-unflag {
+    a::before {
+      width: 11px;
+      height: 11px;
+      border-left: 2px solid;
+      border-bottom: 2px solid;
+      left: -2px;
+      top: 3px;
+      color: $red;
+      background-color: $red;
+    }
+  }
+}
 

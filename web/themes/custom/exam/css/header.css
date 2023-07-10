@@ -32,12 +32,13 @@ header .region-header #block-exam-main-menu .navbar-nav {
 }
 header .region-header #block-exam-main-menu .navbar-nav li {
   text-transform: uppercase;
-  height: inherit;
+  height: 100%;
 }
 header .region-header #block-exam-main-menu .navbar-nav li a {
   padding: 48px 0;
-  height: inherit;
+  height: 97%;
   color: black;
+  border-bottom: 5px solid white;
 }
 header .region-header #block-exam-main-menu .navbar-nav li a.is-active, header .region-header #block-exam-main-menu .navbar-nav li a.active-trail {
   border-bottom: 5px solid #6e9bca;
