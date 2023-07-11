@@ -26,7 +26,7 @@
   margin-top: 50px;
 }
 .node--page-full .node__content .layout--twocol-section .layout__region--first .block-webform {
-  margin-left: 17%;
+  margin-left: 35%;
 }
 .node--page-full .node__content .layout--twocol-section .layout__region--first .block-webform form div input {
   border-radius: 0;
@@ -41,7 +41,7 @@
   float: left;
 }
 .node--page-full .node__content .layout--twocol-section .layout__region--first .block-webform form div textarea {
-  height: 200px;
+  height: 214px;
   resize: none;
 }
 .node--page-full .node__content .layout--twocol-section .layout__region--second .block-field-blocknodepagefield-body {
@@ -57,7 +57,7 @@
 }
 .node--page-full .node__content .layout--twocol-section .layout__region--second .block-views-blockmap-block-1 .view-map .view-content {
   justify-content: flex-start;
-  margin-left: 3%;
+  margin-left: 6%;
 }
 .node--page-full .node__content .layout--twocol-section .layout__region--second .block-views-blockmap-block-1 .view-map .view-content iframe html body #mapDiv > div > div > div:nth-child(4) > div {
   display: none !important;
@@ -80,7 +80,12 @@
     width: 400px;
   }
 }
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
+  .block-webform {
+    margin: 0 0 0 10%;
+  }
+}
+@media (max-width: 840px) {
   .node--page-full .node__content .layout--twocol-section {
     justify-content: center;
   }

@@ -36,7 +36,7 @@
 
       .layout__region--first {
         .block-webform {
-          margin-left: 17%;
+          margin-left: 35%;
 
           form {
             div {
@@ -55,7 +55,7 @@
               }
 
               textarea {
-                height: 200px;
+                height: 214px;
                 resize: none;
               }
             }
@@ -81,7 +81,7 @@
           .view-map {
             .view-content {
               justify-content: flex-start;
-              margin-left: 3%;
+              margin-left: 6%;
 
               iframe {
                 html{
@@ -133,8 +133,12 @@
     }
   }
 }
-
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
+  .block-webform {
+    margin: 0 0 0 10%;
+  }
+}
+@media (max-width: 840px) {
   .node--page-full {
     .node__content {
 

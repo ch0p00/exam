@@ -51,21 +51,21 @@ header .region-header #block-exam-main-menu .navbar-nav li.first a {
   font-size: 0;
   padding: 48px 15px;
 }
-header .region-header #block-socialmediamenu-2 {
+header .region-header #block-socialmediamenu {
   height: 126%;
   background-color: white;
 }
-header .region-header #block-socialmediamenu-2 .menu--social-media-menu {
+header .region-header #block-socialmediamenu .menu--social-media-menu {
   display: flex;
   margin: 48px 0 0 19px;
 }
-header .region-header #block-socialmediamenu-2 .menu--social-media-menu li {
+header .region-header #block-socialmediamenu .menu--social-media-menu li {
   width: 36px;
 }
-header .region-header #block-socialmediamenu-2 .menu--social-media-menu li a {
+header .region-header #block-socialmediamenu .menu--social-media-menu li a {
   font-size: 0;
 }
-header .region-header #block-socialmediamenu-2 .menu--social-media-menu li a:hover {
+header .region-header #block-socialmediamenu .menu--social-media-menu li a:hover {
   background-color: white;
 }
 header .region-header .block-cheeseburgermenu-container .cheeseburger-menu__main-navigation-area div[data-cheeseburger-id=menu-main] .cheeseburger-menu__title {
@@ -140,7 +140,7 @@ header .region-header .block-search-api-page-form-block form .form-actions butto
   header .region-header #block-exam-main-menu .navbar-nav {
     gap: 20px;
   }
-  header .region-header #block-socialmediamenu-2 .menu--social-media-menu {
+  header .region-header #block-socialmediamenu .menu--social-media-menu {
     display: flex;
     margin: 48px 0 0 0;
   }
@@ -149,7 +149,7 @@ header .region-header .block-search-api-page-form-block form .form-actions butto
   header .region-header #block-exam-main-menu {
     display: none;
   }
-  header .region-header #block-socialmediamenu-2 {
+  header .region-header #block-socialmediamenu {
     display: none;
   }
   header .region-header .block-cheeseburger-menu-trigger {
@@ -180,7 +180,7 @@ header .region-header .block-search-api-page-form-block form .form-actions butto
   header .region-header #block-exam-main-menu {
     display: none;
   }
-  header .region-header #block-socialmediamenu-2 {
+  header .region-header #block-socialmediamenu {
     display: none;
   }
   header .region-header .block-cheeseburger-menu-trigger {
@@ -197,5 +197,45 @@ header .region-header .block-search-api-page-form-block form .form-actions butto
   header .region-header .block-search-api-page-form-block form .form-group {
     margin: 0;
   }
+}
+/*Menu Icons*/
+.facebook-link a, a.menu-icon-2,
+ul.links li.menu-icon-2 a,
+ul.menu li.menu-icon-2 a {
+  background-image: url(/sites/default/files/menu_icons/fb_0_0.png) !important;
+  padding-left: 25px;
+  background-repeat: no-repeat;
+  background-position: left center;
+  z-index: 10;
+}
+
+.twitter-link a, a.menu-icon-3,
+ul.links li.menu-icon-3 a,
+ul.menu li.menu-icon-3 a {
+  background-image: url(/sites/default/files/menu_icons/twit_0_0.png) !important;
+  padding-left: 25px;
+  background-repeat: no-repeat;
+  background-position: left center;
+  z-index: 10;
+}
+
+.linkedin-link a, a.menu-icon-4,
+ul.links li.menu-icon-4 a,
+ul.menu li.menu-icon-4 a {
+  background-image: url(/sites/default/files/menu_icons/in_0_0.png) !important;
+  padding-left: 25px;
+  background-repeat: no-repeat;
+  background-position: left center;
+  z-index: 10;
+}
+
+a.menu-icon-12,
+ul.links li.menu-icon-12 a,
+ul.menu li.menu-icon-12 a {
+  background-image: url(/sites/default/files/menu_icons/Homepage-menu_0_0_0.png) !important;
+  padding-left: 28px;
+  background-repeat: no-repeat;
+  background-position: left center;
+  z-index: 10;
 }
 /*# sourceMappingURL=header.css.map */

@@ -65,7 +65,7 @@ header {
       }
     }
 
-    #block-socialmediamenu-2 {
+    #block-socialmediamenu {
       height: 126%;
       background-color: white;
 
@@ -199,7 +199,7 @@ header {
         }
       }
 
-      #block-socialmediamenu-2 {
+      #block-socialmediamenu {
         .menu--social-media-menu {
           display: flex;
           margin: 48px 0 0 0;
@@ -216,7 +216,7 @@ header {
         display: none;
       }
 
-      #block-socialmediamenu-2 {
+      #block-socialmediamenu {
         display: none;
       }
 
@@ -257,7 +257,7 @@ header {
         display: none;
       }
 
-      #block-socialmediamenu-2 {
+      #block-socialmediamenu {
         display: none;
       }
 
@@ -280,4 +280,42 @@ header {
       }
     }
   }
+}
+/*Menu Icons*/
+
+.facebook-link a, a.menu-icon-2,
+ul.links li.menu-icon-2 a,
+ul.menu li.menu-icon-2 a {
+  background-image: url(/sites/default/files/menu_icons/fb_0_0.png) !important;
+  padding-left:25px;
+  background-repeat: no-repeat;
+  background-position: left center;
+  z-index: 10;
+}
+.twitter-link a, a.menu-icon-3,
+ul.links li.menu-icon-3 a,
+ul.menu li.menu-icon-3 a {
+  background-image: url(/sites/default/files/menu_icons/twit_0_0.png) !important;
+  padding-left:25px;
+  background-repeat: no-repeat;
+  background-position: left center;
+  z-index: 10;
+}
+.linkedin-link a, a.menu-icon-4,
+ul.links li.menu-icon-4 a,
+ul.menu li.menu-icon-4 a {
+  background-image: url(/sites/default/files/menu_icons/in_0_0.png) !important;
+  padding-left:25px;
+  background-repeat: no-repeat;
+  background-position: left center;
+  z-index: 10;
+}
+a.menu-icon-12,
+ul.links li.menu-icon-12 a,
+ul.menu li.menu-icon-12 a {
+  background-image: url(/sites/default/files/menu_icons/Homepage-menu_0_0_0.png) !important;
+  padding-left:28px;
+  background-repeat: no-repeat;
+  background-position: left center;
+  z-index: 10;
 }

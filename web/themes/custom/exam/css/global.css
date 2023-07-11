@@ -44,4 +44,7 @@ main .region-content > ul {
 .node--view-mode-short .block-field-blocknodeservicestitle, .node--view-mode-short .block-field-blocknodeprojectstitle, .node--view-mode-short .block-field-blocknodenewstitle, .node--view-mode-short .block-field-blocknodeclientstitle, .node--view-mode-short .block-field-blocknodeour-team-title {
   font-size: 20px;
 }
+.node--view-mode-short p {
+  font-size: 16px;
+}
 /*# sourceMappingURL=global.css.map */
