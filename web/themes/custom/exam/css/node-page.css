@@ -9,8 +9,16 @@
 .views-element-container .view .view-content .views-row {
   flex: 0 1 20%;
 }
+.views-element-container .view.view-search-news #views-exposed-form-search-news-page-1 > div {
+  display: flex;
+  gap: 10px;
+}
 .views-element-container .view.view-search-news .view-filters form .form--inline, .views-element-container .view.view-search-news .form-group form .form--inline {
   text-align: left !important;
+}
+.views-element-container .view.view-search-news .view-filters form .form--inline .form-item, .views-element-container .view.view-search-news .view-filters form .form--inline .form-actions, .views-element-container .view.view-search-news .form-group form .form--inline .form-item, .views-element-container .view.view-search-news .form-group form .form--inline .form-actions {
+  display: flex;
+  align-items: center;
 }
 .views-element-container .view.view-search-news .view-content .views-row {
   flex: 0 1 41%;

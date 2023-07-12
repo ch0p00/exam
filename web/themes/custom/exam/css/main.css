@@ -194,17 +194,24 @@ main .layout__region--content .block-views-blocksearch-news-block-1 .view-search
   margin: 0;
   text-align: left;
 }
+main .layout__region--content .block-views-blocksearch-news-block-1 .view-search-news .form-group #views-exposed-form-search-news-block-1 > div {
+  display: flex;
+  gap: 10px;
+}
 main .layout__region--content .block-views-blocksearch-news-block-1 .view-search-news .form-group .form-item {
-  margin-top: 40px;
   padding: 7px 8px;
-  background-color: #f1f1f1;
   margin-left: 15%;
 }
 main .layout__region--content .block-views-blocksearch-news-block-1 .view-search-news .form-group .form-actions {
-  margin-top: 40px;
   padding: 7px 0;
-  background-color: #f1f1f1;
   margin-left: -10px;
+}
+main .layout__region--content .block-views-blocksearch-news-block-1 .view-search-news .form-group .form-item, main .layout__region--content .block-views-blocksearch-news-block-1 .view-search-news .form-group .form-actions {
+  background-color: #f1f1f1;
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  width: fit-content;
 }
 main .layout__region--content .block-views-blocksearch-news-block-1 .view-search-news .form-group .view-filters {
   padding: 0 !important;
@@ -249,7 +256,6 @@ main .layout__region--content .block-views-blockclients-block-1 .view-content .s
 }
 @media (max-width: 768px) {
   #edit-submit-search-news {
-    margin-bottom: 12px;
     height: 33px;
   }
   .block-views-blockclients-block-1 {

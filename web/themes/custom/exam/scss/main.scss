@@ -238,19 +238,28 @@ main {
           margin: 0;
           text-align: left;
 
+          #views-exposed-form-search-news-block-1 > div{
+            display: flex;
+            gap: 10px;
+          }
 
           .form-item {
-            margin-top: 40px;
             padding: 7px 8px;
-            background-color: #f1f1f1;
             margin-left: 15%;
           }
 
           .form-actions {
-            margin-top: 40px;
             padding: 7px 0;
-            background-color: #f1f1f1;
             margin-left: -10px;
+          }
+
+          .form-item, .form-actions {
+            background-color: #f1f1f1;
+            margin-top: 40px;
+            display: flex;
+            align-items: center;
+            width: fit-content;
+
           }
 
         }
@@ -343,7 +352,6 @@ main {
 
 @media (max-width: 768px) {
   #edit-submit-search-news {
-    margin-bottom: 12px;
     height: 33px;
   }
   .block-views-blockclients-block-1 {
