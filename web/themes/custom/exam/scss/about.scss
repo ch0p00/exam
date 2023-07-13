@@ -1,15 +1,16 @@
 @import "variables";
 @import "mixins";
 
-.page-header{
+.page-header {
   margin-top: $margin;
   border: none;
 }
 
-.node--page-full{
-  .field--type-string-long{
-    margin: 0 15%;
-    .field--item{
+.node--page-full {
+  .field--type-string-long {
+    margin: 0 $marginM;
+
+    .field--item {
       font-size: 20px;
       font-weight: 900;
       margin: 0 5% 20px 5%;
@@ -20,10 +21,11 @@
 }
 
 @media (max-width: 700px) {
-  .node--page-full{
-    .field--type-string-long{
+  .node--page-full {
+    .field--type-string-long {
       margin: 0 10%;
-      .field--item{
+
+      .field--item {
         font-size: 16px;
         font-weight: 700;
         margin-bottom: 10px;

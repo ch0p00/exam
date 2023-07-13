@@ -21,71 +21,71 @@
 }
 
 .block-title::before, .page-header::before {
-  right: 15%;
+  right: $marginM;
   width: 24%;
 }
 
 .block-title::after, .page-header::after {
-  left: 15%;
+  left: $marginM;
   width: 24%;
 }
 
 @media (max-width: 1700px) {
   .block-title::before, .page-header::before {
-    right: 15%;
+    right: $marginM;
     width: 23%;
   }
 
   .block-title::after, .page-header::after {
-    left: 15%;
+    left: $marginM;
     width: 23%;
   }
 }
 
 @media (max-width: 1500px) {
   .block-title::before, .page-header::before {
-    right: 15%;
+    right: $marginM;
     width: 20%;
   }
 
   .block-title::after, .page-header::after {
-    left: 15%;
+    left: $marginM;
     width: 20%;
   }
 }
 
 @media (max-width: 1440px) {
   .block-title::before, .page-header::before {
-    right: 15%;
+    right: $marginM;
     width: 18%;
   }
 
   .block-title::after, .page-header::after {
-    left: 15%;
+    left: $marginM;
     width: 18%;
   }
 }
 
 @media (max-width: 1050px) {
   .block-title::before, .page-header::before {
-    right: 15%;
+    right: $marginM;
     width: 15%;
   }
 
   .block-title::after, .page-header::after {
-    left: 15%;
+    left: $marginM;
     width: 15%;
   }
 }
 
 @media (max-width: 880px) {
   .block-title::before, .page-header::before {
-    right: 15%;
+    right: $marginM;
     width: 8%;
   }
 
   .block-title::after, .page-header::after {
-    left: 15%;
+    left: $marginM;
     width: 8%;
   }
 }
@@ -104,18 +104,17 @@ main {
   .layout__region--content {
 
     .block-block-content {
-      margin: 95px 15%;
-      padding: 10px 0;
-      display: flex;
-      align-items: center;
+      margin: 95px $marginM;
+      padding: $marginS 0;
+      @include flexCenter;
       justify-content: space-between;
       text-transform: uppercase;
       font-weight: 900;
       border-top: 5px solid $darkBlue;
-      border-bottom: 5px solid $blue;
+      @include border($blue);
 
       .field--name-field-title {
-        font-size: 30px;
+        font-size: $margin;
       }
 
       .field--name-body {
@@ -146,9 +145,7 @@ main {
 
     .block-views-blockblock-services-block-1 {
       .view-content {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        @include flexCenter;
         gap: 55px;
         flex-wrap: wrap;
         margin: 90px 8%;
@@ -162,12 +159,10 @@ main {
         margin-top: 15px;
         padding-bottom: 100px;
         background-size: 11px 11px;
-        background-image: repeating-linear-gradient(135deg, #dbdbdb 0, #dbdbdb 1.1px, #ffffff 0, #ffffff 50%);
+        @include bgLines;
 
         .view-content {
-          display: flex;
-          align-items: center;
-          justify-content: center;
+          @include flexCenter;
           flex-wrap: wrap;
           padding: 90px 0 45px 0;
           gap: 40px;
@@ -190,9 +185,7 @@ main {
       margin-top: 90px;
 
       .view-content {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        @include flexCenter;
         gap: 30px;
         flex-wrap: wrap;
         margin: 38px 6% 184px 6%;
@@ -202,7 +195,7 @@ main {
     .block-views-blocksearch-news-block-1 {
       .view-search-news {
         background-size: 11px 11px;
-        background-image: repeating-linear-gradient(135deg, #dbdbdb 0, #dbdbdb 1.1px, #ffffff 0, #ffffff 50%);
+        @include bgLines;
 
         .view-empty {
           max-width: 300px;
@@ -238,19 +231,19 @@ main {
           margin: 0;
           text-align: left;
 
-          #views-exposed-form-search-news-block-1 > div{
+          #views-exposed-form-search-news-block-1 > div {
             display: flex;
-            gap: 10px;
+            gap: $marginS;
           }
 
           .form-item {
             padding: 7px 8px;
-            margin-left: 15%;
+            margin-left: $marginM;
           }
 
           .form-actions {
             padding: 7px 0;
-            margin-left: -10px;
+            margin-left: -$marginS;
           }
 
           .form-item, .form-actions {

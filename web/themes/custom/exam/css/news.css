@@ -145,9 +145,9 @@
   .node--news-teaser .layout--twocol-section .layout__region--second {
     flex: 0 1 100%;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
   }
   .node--news-teaser .layout--twocol-section .layout__region--second .block-field-blocknodenewsrevision-timestamp {
     margin: 0 auto;

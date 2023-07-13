@@ -27,6 +27,7 @@ footer .region-footer nav .menu--social-media-menu li a:hover {
 @media (max-width: 540px) {
   footer .region-footer {
     flex-direction: column;
+    display: flex;
     justify-content: center;
     align-items: center;
     height: 150px;

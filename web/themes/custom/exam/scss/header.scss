@@ -2,8 +2,7 @@
 @import "mixins";
 
 header {
-  display: flex;
-  justify-content: center;
+  @include flexCenter;
   margin-top: 40px;
   overflow: hidden;
 
@@ -43,15 +42,15 @@ header {
             padding: 48px 0;
             height: 97%;
             color: black;
-            border-bottom: 5px solid white;
+            @include border(white);
 
             &.is-active, &.active-trail {
-              border-bottom: 5px solid $blue;
+              @include border($blue);
             }
 
             &:hover {
               background-color: white;
-              border-bottom: 5px solid $blue;
+              @include border($blue);
             }
           }
 
@@ -110,7 +109,7 @@ header {
 
                 span {
                   &:hover {
-                    border-bottom: 5px solid $blue;
+                    @include border($blue);
                   }
                 }
               }
@@ -121,6 +120,7 @@ header {
         div[data-cheeseburger-id="menu-social-media-menu"] {
           .cheeseburger-menu__mainmenu {
             display: flex;
+
             .social-media-menu__item {
               a {
                 font-size: 0;
@@ -153,7 +153,7 @@ header {
       form {
         display: flex;
         margin-top: 40px;
-        padding-left: 10px;
+        padding-left: $marginS;
 
         div {
           width: 170px;
@@ -169,7 +169,7 @@ header {
 
         .form-actions {
           margin-right: 38px;
-          width: 30px;
+          width: $margin;
 
           button {
             font-size: 0;
@@ -222,9 +222,7 @@ header {
 
       .block-cheeseburger-menu-trigger {
         height: 125%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flexCenter;
 
         .block-cheeseburgermenu__trigger-element {
           margin: 5px;
@@ -232,9 +230,7 @@ header {
       }
 
       .block-search-api-page-form-block {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        @include flexCenter;
 
         form {
           margin-top: 20px;
@@ -280,42 +276,4 @@ header {
       }
     }
   }
-}
-/*Menu Icons*/
-
-.facebook-link a, a.menu-icon-2,
-ul.links li.menu-icon-2 a,
-ul.menu li.menu-icon-2 a {
-  background-image: url(/sites/default/files/menu_icons/fb_0_0.png) !important;
-  padding-left:25px;
-  background-repeat: no-repeat;
-  background-position: left center;
-  z-index: 10;
-}
-.twitter-link a, a.menu-icon-3,
-ul.links li.menu-icon-3 a,
-ul.menu li.menu-icon-3 a {
-  background-image: url(/sites/default/files/menu_icons/twit_0_0.png) !important;
-  padding-left:25px;
-  background-repeat: no-repeat;
-  background-position: left center;
-  z-index: 10;
-}
-.linkedin-link a, a.menu-icon-4,
-ul.links li.menu-icon-4 a,
-ul.menu li.menu-icon-4 a {
-  background-image: url(/sites/default/files/menu_icons/in_0_0.png) !important;
-  padding-left:25px;
-  background-repeat: no-repeat;
-  background-position: left center;
-  z-index: 10;
-}
-a.menu-icon-12,
-ul.links li.menu-icon-12 a,
-ul.menu li.menu-icon-12 a {
-  background-image: url(/sites/default/files/menu_icons/Homepage-menu_0_0_0.png) !important;
-  padding-left:28px;
-  background-repeat: no-repeat;
-  background-position: left center;
-  z-index: 10;
 }

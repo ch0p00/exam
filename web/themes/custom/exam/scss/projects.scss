@@ -2,42 +2,50 @@
 @import "mixins";
 
 .node--projects {
-  &-teaser{
+  &-teaser {
     text-align: center;
-    .layout__region--content *{
+
+    .layout__region--content * {
       width: fit-content;
       text-transform: uppercase;
     }
-    .layout--onecol{
+
+    .layout--onecol {
       display: flex;
       justify-content: center;
     }
-    .layout__region--content{
+
+    .layout__region--content {
       display: flex;
       flex-direction: column;
       align-items: center;
       width: fit-content;
 
-      .block-field-blocknodeprojectstitle{
+      .block-field-blocknodeprojectstitle {
         z-index: 1;
         margin: 32px 0 4px 0;
-        a{
+
+        a {
           font-size: 25px;
           color: black;
         }
       }
-      .block-field-blocknodeprojectsfield-related-service{
+
+      .block-field-blocknodeprojectsfield-related-service {
         z-index: 1;
-        a{
-          div{
+
+        a {
+          div {
             font-size: 16px;
           }
         }
       }
-      .block-field-blocknodeprojectsfield-more{
+
+      .block-field-blocknodeprojectsfield-more {
         margin: 23px 0 16px 0;
         z-index: 1;
-        a{
+
+        a {
           padding: 5px;
           color: white;
           background-color: $darkBlue;
@@ -46,34 +54,42 @@
       }
     }
   }
-  &-full{
-    .layout__region--content{
+
+  &-full {
+    .layout__region--content {
       padding: 5% 17%;
       text-align: left;
-      .block-field-blocknodeprojectstitle{
+
+      .block-field-blocknodeprojectstitle {
         font-weight: 900;
         font-size: 28px;
       }
-      .block-field-blocknodeprojectsfield-image{
+
+      .block-field-blocknodeprojectsfield-image {
         margin-top: -25px;
-        img{
+
+        img {
           float: right;
         }
       }
-      .block-field-blocknodeprojectsbody{
-        .field--name-body{
-          p{
+
+      .block-field-blocknodeprojectsbody {
+        .field--name-body {
+          p {
             font-size: 23px;
           }
-          p:first-child{
+
+          p:first-child {
             width: 70%;
             margin-top: -200px;
           }
         }
       }
-      .block-field-blocknodeprojectsfield-related-service{
+
+      .block-field-blocknodeprojectsfield-related-service {
         margin-top: 20px;
-        a{
+
+        a {
           font-size: 14px;
           text-transform: uppercase;
         }
@@ -84,10 +100,10 @@
 
 @media (max-width: 1150px) {
   .node--projects {
-    &-teaser{
-      .layout__region--content{
-        .block-field-blocknodeprojectstitle{
-          a{
+    &-teaser {
+      .layout__region--content {
+        .block-field-blocknodeprojectstitle {
+          a {
             font-size: 22px;
 
           }
@@ -99,41 +115,48 @@
 
 @media (max-width: 850px) {
   .node--projects {
-      &-full{
-        .layout__region--content{
-          padding: 3% 10%;
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          .block-field-blocknodeprojectstitle{
-            font-weight: 700;
-            font-size: 22px;
+    &-full {
+      .layout__region--content {
+        padding: 3% 10%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .block-field-blocknodeprojectstitle {
+          font-weight: 700;
+          font-size: 22px;
+        }
+
+        .block-field-blocknodeprojectsfield-image {
+          margin-top: 0;
+
+          img {
+            float: right;
           }
-          .block-field-blocknodeprojectsfield-image{
-            margin-top: 0;
-            img{
-              float: right;
+        }
+
+        .block-field-blocknodeprojectsbody {
+          .field--name-body {
+            p {
+              font-size: 18px;
             }
-          }
-          .block-field-blocknodeprojectsbody{
-            .field--name-body{
-              p{
-                font-size: 18px;
-              }
-              p:first-child{
-                width: 100%;
-                margin-top: 0;
-              }
-            }
-          }
-          .block-field-blocknodeprojectsfield-related-service{
-            margin-top: 20px;
-            a{
-              font-size: 14px;
-              text-transform: uppercase;
+
+            p:first-child {
+              width: 100%;
+              margin-top: 0;
             }
           }
         }
+
+        .block-field-blocknodeprojectsfield-related-service {
+          margin-top: 20px;
+
+          a {
+            font-size: 14px;
+            text-transform: uppercase;
+          }
+        }
       }
+    }
   }
 }

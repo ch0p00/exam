@@ -4,8 +4,7 @@
 .node--clients {
   &-teaser {
     a {
-      display: flex;
-      justify-content: center;
+      @include flexCenter;
     }
   }
 

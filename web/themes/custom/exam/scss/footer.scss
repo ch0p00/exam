@@ -1,57 +1,66 @@
 @import "variables";
 @import "mixins";
 
-footer{
-  .region-footer{
+footer {
+  .region-footer {
     padding: 0 17.5%;
     background-color: $darkBlue;
     display: flex;
     justify-content: space-between;
     height: 120px;
-    .navbar-text{
+
+    .navbar-text {
       height: $margin;
       position: absolute;
       margin-top: 60px;
     }
-    nav{
-      .menu--social-media-menu{
+
+    nav {
+      .menu--social-media-menu {
         display: flex;
         margin: 48px 0 0 19px;
-        li{
+
+        li {
           width: 36px;
-          a{
+
+          a {
             font-size: 0;
-            &:hover{
+
+            &:hover {
               background-color: transparent;
             }
           }
         }
       }
     }
-    }
   }
+}
 
 @media (max-width: 540px) {
-  footer{
-    .region-footer{
+  footer {
+    .region-footer {
       flex-direction: column;
-      justify-content: center;
-      align-items: center;
+      @include flexCenter;
       height: 150px;
-      .navbar-brand{
-        a{
+
+      .navbar-brand {
+        a {
           width: 100%;
         }
       }
-      .navbar-text{
+
+      .navbar-text {
         position: absolute;
       }
-      nav{
-        .menu--social-media-menu{
+
+      nav {
+        .menu--social-media-menu {
           display: flex;
-          li{
+
+          li {
             width: 36px;
-            a{
+
+            a {
               font-size: 0;
             }
           }
