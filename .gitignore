@@ -30,3 +30,5 @@ sites/*/services*.yml
 sites/*/files
 sites/*/private
 sites/simpletest
+/.editorconfig
+/.gitattributes

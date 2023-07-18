@@ -22,6 +22,7 @@
 .node--projects-teaser .layout__region--content .block-field-blocknodeprojectstitle a {
   font-size: 25px;
   color: black;
+  white-space: nowrap;
 }
 .node--projects-teaser .layout__region--content .block-field-blocknodeprojectsfield-related-service {
   z-index: 1;
@@ -40,7 +41,7 @@
   font-size: 16px;
 }
 .node--projects-full .layout__region--content {
-  padding: 5% 17%;
+  padding: 1% 17%;
   text-align: left;
 }
 .node--projects-full .layout__region--content .block-field-blocknodeprojectstitle {
@@ -48,7 +49,7 @@
   font-size: 28px;
 }
 .node--projects-full .layout__region--content .block-field-blocknodeprojectsfield-image {
-  margin-top: -25px;
+  margin-top: -10px;
 }
 .node--projects-full .layout__region--content .block-field-blocknodeprojectsfield-image img {
   float: right;
@@ -58,7 +59,7 @@
 }
 .node--projects-full .layout__region--content .block-field-blocknodeprojectsbody .field--name-body p:first-child {
   width: 70%;
-  margin-top: -200px;
+  margin-top: -280px;
 }
 .node--projects-full .layout__region--content .block-field-blocknodeprojectsfield-related-service {
   margin-top: 20px;
@@ -85,7 +86,7 @@
     font-size: 22px;
   }
   .node--projects-full .layout__region--content .block-field-blocknodeprojectsfield-image {
-    margin-top: 0;
+        margin: 30px;
   }
   .node--projects-full .layout__region--content .block-field-blocknodeprojectsfield-image img {
     float: right;
